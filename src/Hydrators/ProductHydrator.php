@@ -6,8 +6,9 @@ namespace RobotStores\Hydrators;
 use PDO;
 use RobotStores\Entities\Item;
 
-class ProductHydrator
-{
+class ProductHydrator {
+
+
     public static function getProducts(PDO $db): array
     {
         $query = $db->prepare("SELECT * FROM `products`");
@@ -16,13 +17,6 @@ class ProductHydrator
         return $query->fetchAll();
     }
 }
-//    public static function getProduct(PDO $db, int $id):array
-//    {
-//        $personQuery = $db->prepare('SELECT * FROM `posts` WHERE `id` = :id;');
-//        $personQuery->execute(['id' => $id]);
-//
-//        $personQuery->setFetchMode(PDO::FETCH_CLASS, Item::class);
-//        $person = $personQuery->fetch();
-//        return $person;
-//    }
-//
+
+
+

@@ -5,14 +5,28 @@ require ('vendor/autoload.php');
 use RobotStores\DatabaseConnector;
 use RobotStores\Hydrators\ProductHydrator;
 
-echo 'hello phpers';
-
 $db = DatabaseConnector::connect();
 
-$allProducts = ProductHydrator::getProducts($db);
+$product = ProductHydrator::getProducts($db);
 
-$product = $allProducts[0];
+foreach ($product as $item){
+    echo "<div class='product'>";
+    echo "<h1>" . htmlspecialchars($item->title) . "</h1>";
+    echo "<p>Price" . htmlspecialchars($item->price) . "</p>";
+    echo "<img src='" . htmlspecialchars($item->image) . "' alt='" . htmlspecialchars($item->title) . "' />";
+    echo "</div>";
+
+}
+
+?>
 
 
-echo '<pre>';
-var_dump($product->id);
+
+
+
+
+
+
+
+
+
