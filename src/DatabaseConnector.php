@@ -1,5 +1,7 @@
 <?php
 
+namespace RobotStores;
+use PDO;
 
 class DatabaseConnector
 {

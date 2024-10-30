@@ -1,5 +1,6 @@
 <?php
 
+namespace RobotStores\Entities;
 
 class Item
 {

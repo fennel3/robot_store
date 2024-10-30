@@ -1,6 +1,10 @@
 <?php
 
-require_once 'Entity/Item.php';
+
+namespace RobotStores\Hydrators;
+
+use PDO;
+use RobotStores\Entities\Item;
 
 class ProductHydrator
 {

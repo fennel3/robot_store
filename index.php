@@ -1,10 +1,11 @@
 <?php
 
-echo 'hello phpers';
+require ('vendor/autoload.php');
 
-require_once 'src/DatabaseConnector.php';
-require_once 'src/Entity/Item.php';
-require_once 'src/ProductHydrator.php';
+use RobotStores\DatabaseConnector;
+use RobotStores\Hydrators\ProductHydrator;
+
+echo 'hello phpers';
 
 $db = DatabaseConnector::connect();
 
