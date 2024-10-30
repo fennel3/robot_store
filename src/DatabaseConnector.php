@@ -1,6 +1,5 @@
 <?php
 
-namespace src;
 
 class DatabaseConnector
 {

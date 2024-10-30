@@ -1,8 +1,7 @@
 <?php
 
-namespace src\Entities;
 
-class Items
+class Item
 {
     public string $id;
     public string $title;
@@ -13,7 +12,6 @@ class Items
     public string $character_id;
     public string $character;
     public string $description;
-    public string $image2;
-    public string $image3;
-
+    public string | null $image2;
+    public string | null $image3;
 }
