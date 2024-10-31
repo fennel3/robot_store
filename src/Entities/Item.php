@@ -2,7 +2,9 @@
 
 namespace RobotStores\Entities;
 
-class Item
+use JsonSerializable;
+
+class Item implements JsonSerializable
 {
     public string $id;
     public string $title;
@@ -15,4 +17,19 @@ class Item
     public string $description;
     public string | null $image2;
     public string | null $image3;
+
+    public function jsonSerialize(): mixed
+    {
+
+        return [
+            'id' => $this->id,
+            'description' => $this->description,
+            'category' => $this->category,
+            '<br>'
+
+        ];
+
+
+    }
 }
+

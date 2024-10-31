@@ -18,5 +18,18 @@ class ProductHydrator {
     }
 }
 
+//    public static function getProduct(PDO $db, int $id):array
+//    {
+//        $personQuery = $db->prepare('SELECT * FROM `posts` WHERE `id` = :id;');
+//        $personQuery->execute(['id' => $id]);
+//
+//        $personQuery->setFetchMode(PDO::FETCH_CLASS, Item::class);
+//        $person = $personQuery->fetch();
+//        return $person;
+//    }
+//
+
+
+
 
 
