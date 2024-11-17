@@ -1,4 +1,2 @@
 # robot_store
-A robot merch store. Uses PHP, SQL as a database and Docker to host.
-Browse the robot store and click on an item you like the look of for further details!
-New items can be added to the store.
+This project is a robot merchandise store built with PHP and an SQL database. It serves as a showcase of my ability to organise and structure code following the SOLID principles of object-oriented programming (OOP). The project demonstrates skills in database management, backend development, and adherence to best practices in software design.
